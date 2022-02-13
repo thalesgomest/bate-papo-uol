@@ -19,7 +19,7 @@
 
 
 ## Project Description
-<p align="justify">My my fifth project for the Driven Education bootcamp was the JavaScript implementation of a fully functional chat, inspired by the healthy Bate-Papo UOL (famous Brazilian website), using an API to enable communication</p>
+<p align="justify">My fifth project for the Driven Education bootcamp was the JavaScript implementation of a fully functional chat, inspired by the healthy Bate-Papo UOL (famous Brazilian website), using an API to enable communication</p>
 
 ### Status
 <!-- ![status-finished](https://user-images.githubusercontent.com/97575616/152926720-d042178b-24c0-4d6b-94fb-0ccbd3c082cc.svg) -->
