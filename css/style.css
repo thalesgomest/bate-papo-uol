@@ -242,7 +242,7 @@ main li span {
     padding-left: 16px;
 }
 
-/* !<---- Activit Members Screen -----> */
+/* !<---- Side Menu -----> */
 
 .active_participants_screen {
     position: fixed;
@@ -338,6 +338,8 @@ li {
 .chose_visibility {
     margin-left: 20px;
 }
+
+/* !<---- Others -----> */
 
 .display-off {
     display: none;

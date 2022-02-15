@@ -34,14 +34,6 @@ function validarUserName(resposta) {
     carregarMensagens();
     setInterval(recarregarPagina,3000);
     },5000)
-    /* function () {
-    let loginScreen = document.querySelector(".login_screen");
-    loginScreen.classList.add("display-off")
-    let msgScreen = document.querySelector(".msg_screen");
-    msgScreen.classList.remove("display-off")
-    carregarMensagens();
-    setInterval(recarregarPagina,3000);
-    } */
 }
 
 function erroLogin(erro) {
@@ -133,7 +125,7 @@ function adicionarParticipante (participante) {
 function escolherDestinatario (elemento) {
     contato=elemento.getElementsByTagName("p")[0].innerHTML
     const selecionado = elemento.parentNode.querySelector(".selecionado")
-    if(selecionado !== null) { // ! = = diferente de nulo
+    if(selecionado !== null) { 
         selecionado.classList.remove("selecionado");
     }
     elemento.classList.add("selecionado");
@@ -154,7 +146,7 @@ function escolherVisibilidade (elemento) {
             break;
     }
     const selecionado = elemento.parentNode.querySelector(".selecionado")
-    if(selecionado !== null) { // ! = = diferente de nulo
+    if(selecionado !== null) { 
         selecionado.classList.remove("selecionado");
     }
     elemento.classList.add("selecionado");
@@ -165,12 +157,12 @@ function escolherVisibilidade (elemento) {
 
 function enviarMensagem () {
     let mensagem = document.querySelector(".txt_msg textarea").value
-    if(mensagem){
+    if (mensagem) {
         let objetoMensagem = {
             from: user.name,
             to: contato,
             text: mensagem,
-            type: type // ou "private_message" para o bônus
+            type: type
         }
         const promise = axios.post("https://mock-api.driven.com.br/api/v4/uol/messages",objetoMensagem)
         promise.then(mensagemEnviada)
@@ -187,31 +179,19 @@ function mensagemEnviada () {
     carregarMensagens()
 }
 
-/* document.getElementById("txt_msg").addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-    enviarMensagem()
-    }
-}); */
-
-/* document.getElementById("login_name").addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-    entrar()
-    }
-});
- */
 
 document.getElementById("txt_msg").addEventListener('keyup', function(e){
-  let key = e.keyCode;
-  if (key == 13) { // codigo da tecla enter
-   enviarMensagem();// colocas aqui a tua função a rodar
-  }
+let key = e.keyCode;
+if (key == 13) { // codigo da tecla enter
+enviarMensagem();// colocas aqui a tua função a rodar
+}
 });
 
 document.getElementById("login_name").addEventListener('keyup', function(e){
-  let key = e.keyCode;
-  if (key == 13) { // codigo da tecla enter
-    entrar();// colocas aqui a tua função a rodar
-  }
+let key = e.keyCode;
+if (key == 13) { // codigo da tecla enter
+entrar();// colocas aqui a tua função a rodar
+}
 });
 
 
