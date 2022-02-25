@@ -14,6 +14,7 @@
 ## Table of contents
 * [Project Description](#project-description)
 * [Status](#status)
+* [Mockup](#Mockup)
 * [Requirements](#requirements)
 * [Author](#author)
 
@@ -25,6 +26,11 @@
 <!-- ![status-finished](https://user-images.githubusercontent.com/97575616/152926720-d042178b-24c0-4d6b-94fb-0ccbd3c082cc.svg) -->
 ![status-in-progress](https://user-images.githubusercontent.com/97575616/153774620-d6a0a615-9d38-4402-ae72-20c52f8bbd5c.svg)
 
+### Mockup 
+<p align="center">
+<img width=300px src="https://user-images.githubusercontent.com/97575616/155638279-16b1012e-872d-493b-9112-fc4aaf4cba66.png">
+<img width=500px src="https://user-images.githubusercontent.com/97575616/155638289-91159143-f616-4706-a8d9-18f3fff094b0.png">
+</p>
 
 ## Requirements
 
