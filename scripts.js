@@ -45,7 +45,6 @@ function carregarMensagens() {
     promise.then(renderizarMensagens);
 }
 
-
 function renderizarMensagens(mensagens) {
     document.querySelector("main ul").innerHTML="";
     console.log(mensagens)
